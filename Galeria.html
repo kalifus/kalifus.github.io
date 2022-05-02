@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>BosBruk</title>
+	
+	<meta name="description" content="Serwis o starych grach pochodzących z Nintendo Entertainment System" />
+	<meta name="keywords" content="gry, komputerowe, retro, nes, konsole, retrogranie, stare gry" />
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+		
+			<div class="logo">
+				
+				<span style="color: #c34f4f">Bos</span>Bruk
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div class="nav">
+			<ol>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+				
+			</ol>
+		
+		</div>
+		
+		<div class="content">
+            <h1>Zdjęcia też wstawilem tymczasowo</h1>
+            
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+			<img src= "ikona1.png"/>
+		</div>
+		
+		
+		
+		<div class="footer">BOS BRUK &copy </div>
+	</div>
+	
+	<script src="jquery-1.11.3.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+</body>
+</html>
